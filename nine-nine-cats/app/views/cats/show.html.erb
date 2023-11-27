@@ -1,0 +1,18 @@
+<h1> <%= @cat.name %> </h1>
+
+<%= render 'cat', cat: @cat %>
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2"><%= @cat.name%></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Name</td>
+      <td><%= @cat.name %></td>
+    </tr>
+  </tbody>
+</table>
