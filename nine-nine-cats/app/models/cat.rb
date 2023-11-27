@@ -24,16 +24,6 @@ class Cat < ApplicationRecord
         now = Time.now.utc.to_date  # 11/27/2023
         now.year - birth_date.year - ((now.month > birth_date.month || (now.month == birth_date.month && now.day >= birth_date.day)) ? 0 : 1)
     end
-    # def cat_colors
-    #     if !CAT_COLORS.include?(color)
-    #         errors.add(:color, 'not included')
-    #     end
-    # end
 
-    # def cat_sex
-    #     if !CAT_SEXES.include?(sex)
-    #         errors.add(:sex, 'not included')
-    #     end
-    # end
 
 end
